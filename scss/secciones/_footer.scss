@@ -1,0 +1,54 @@
+.pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $blanco;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  grid-area: footer;
+  li {
+    text-transform: uppercase;
+    color: $primarioOscuro;
+    font-size: 0.75rem;
+    list-style: none;
+    padding: 0.5rem;
+    a {
+      &:hover {
+        color: var(--negro);
+        cursor: pointer;
+      }
+      ion-icon {
+        font-size: 2rem;
+        color: $primarioOscuro;
+      }
+    }
+  }
+}
+
+.contenedorPie {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.logo2 {
+  height: 3rem;
+  width: auto;
+  margin: 0;
+}
+.footer {
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: lighter;
+    font-size: smaller;
+    color: grey;
+  }
+}
+
+@media (max-width: 768px) {
+  .pie {
+    flex-direction: column;
+  }
+}

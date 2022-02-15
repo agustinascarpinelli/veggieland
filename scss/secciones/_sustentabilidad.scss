@@ -1,0 +1,59 @@
+/* SUSTENTABILIDAD */
+.img-sust{
+    width:  240px;
+  }
+  
+  
+  
+  .sustentabilidad{
+      @include principal (480px,2rem);
+    background-image: url(../imagenes/sustentab.jpg);
+  }
+  
+  .contenido-sustentabilidad{
+      @include contenido-principal(0rem,3rem,$blanco,0rem,0rem,$blanco,1rem);
+      h1{
+        text-align: center;
+        }
+  }
+  
+
+  
+  .img-sust{
+    margin-right: 0rem;
+  }
+  .sustent1 {
+      h1{
+    margin-bottom: 2rem;
+  }
+}
+  
+  .sustentabilidad-cont {
+    background-color: $gris;
+    text-align: center;
+    margin: 2rem;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0 ,0.75);
+    border-radius: 1rem;
+    padding: 2rem;
+    }
+  
+    .sust1{
+         h1{
+  color:$primarioOscuro;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+    }
+        h2{
+        font-size: 2rem;
+        color:$primarioOscuro;
+      }
+}
+  
+    
+  
+    .sust2{
+      align-items: center;
+    }
+  

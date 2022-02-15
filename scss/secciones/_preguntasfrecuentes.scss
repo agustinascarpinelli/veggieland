@@ -1,0 +1,186 @@
+/* PREGUNTAS FRECUENTES */
+.grilla-preguntas{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "nav" "contenido" "beneficio" "dudas" "footer";
+    align-content: center;
+  }
+  
+  .preguntas{
+      @include principal (450px,2rem);
+    background-image: url(../imagenes/veggie.jpg);
+  
+  }
+  
+  .contenido-preguntas{
+      @include contenido-principal (0rem,0rem,$blanco,0rem,1rem,$blanco,1rem);
+      p{ 
+        font-weight: bolder;  
+        margin-left: 4rem;
+        margin-right: 4rem;
+        }
+    }
+  
+     
+  
+  
+   
+    .beneficio{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr,6fr;
+      grid-template-areas: "titulo titulo titulo titulo""benefic1 benefic2 benefic3 benefic4";
+      grid-area:beneficio;
+      justify-items: center;
+      align-items: start;
+      h1{
+        grid-area:titulo;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2rem;
+       }
+       div{
+            h1{
+        color: var(--primarioOscuro);
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+      p{
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      ion-icon {
+        color: yellow;
+      }
+  }
+  
+    }
+    .benefic1{
+      grid-area: benefic1;
+    }
+    .benefic2{
+      grid-area: benefic2;
+    }
+    .benefic3{
+      grid-area: benefic3;
+    }
+    .benefic4{
+      grid-area: benefic4;
+    }
+  
+     
+     
+     
+  
+     @media (max-width:768px){
+      .beneficio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 6fr,6fr,6fr,6fr;
+        grid-template-areas: "titulo""benefic1" "benefic2 ""benefic3"" benefic4";
+        justify-content:center;
+    
+      }
+      .contenido-preguntas {
+          p{ 
+        color:var(--blanco);
+        font-weight: bolder;  
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+        }
+  
+  
+     }
+     }
+    .aqui{
+      text-decoration: underline;
+    }
+    
+  .dudas_frecuentes{
+    grid-area:dudas;
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size:2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        h2{
+            font-size: 1.5rem;
+            color: var(--primarioOscuro);
+            font-weight: bolder;
+            
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+          }
+          }
+
+  
+  
+    .form_dudas_contenido{
+      display: flex;
+      flex-direction: column;
+      legend{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primarioOscuro);
+        margin-bottom: 2rem;
+      }
+      input {
+        border-radius: .5rem;
+        border-width: thin;
+      }
+    }
+  
+   
+  
+  
+  
+  @media (min-width:1020px){
+    .form_dudas_contenido {
+        input{
+      margin-right: 35rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    textarea{
+        height:20rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+      }
+      label{
+        font-weight: bold;
+        margin-bottom: 0.5rem
+      }
+      div {
+          input {
+        margin: 3rem 33rem;
+        justify-content: center;
+      }
+    }
+    .boton {
+        margin-top: 2rem;
+        width: 5rem;
+        margin:1rem auto;
+      }
+  }
+  }
+    
+    .accordion-button:not(.collapsed) {
+        color: var(--negro);
+        background-color: var(--blanco);
+        box-shadow: none;
+    }
+  
+    .accordion-button:focus {
+     
+      border-color:var(--blanco);
+      outline: 0;
+      box-shadow: none;
+  }

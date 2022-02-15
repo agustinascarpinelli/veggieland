@@ -1,0 +1,16 @@
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+  
+ .sombra {
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: $blanco;
+    margin: 2rem;
+   
+  }
+  

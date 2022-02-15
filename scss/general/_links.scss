@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    &:hover{
+    color: var(--negro);
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+ li {
+     &:active{
+    transition: 0.5s;
+     }
+     &:hover{
+    transition: 0.5s;
+  }
+}

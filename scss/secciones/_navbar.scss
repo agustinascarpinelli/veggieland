@@ -1,0 +1,19 @@
+.logo{
+    height:3rem;
+  }
+  .fondonav{
+    background-color: $blanco;
+  }
+  .dropdown-item{
+      .active {
+    color:$negro;
+    text-decoration: none;
+    background-color: $blanco;
+  }
+      &:active {
+        color:$negro;
+        text-decoration: none;
+        background-color: $blanco;
+      }
+    }
+  

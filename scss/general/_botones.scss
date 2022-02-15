@@ -1,0 +1,18 @@
+
+.boton {
+    color: $blanco;
+    background-color: $primario;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition-duration: 1s;
+    transition-property: all;
+    margin-bottom: 2rem;
+    &:hover{
+    transform:scale(1.3);
+    cursor:pointer;
+  }
+}

@@ -1,0 +1,131 @@
+.semanal {
+  background-color: $gris;
+  text-align: center;
+  margin: 2rem;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-row-gap: 2rem;
+  grid-template-areas:
+    "titulo titulo"
+    "titulo2 titulo2"
+    "op1 op2"
+    "op3 op4"
+    "op5 op5"
+    "boton boton";
+
+  h1 {
+    margin: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primarioOscuro;
+    grid-area: titulo;
+  }
+  h2 {
+    margin-bottom: 2rem;
+    color: $primarioOscuro;
+    grid-area: titulo2;
+  }
+  op1 {
+    grid-area: op1;
+  }
+  op3 {
+    grid-area: op3;
+  }
+  op4 {
+    grid-area: op4;
+  }
+  op2 {
+    grid-area: op2;
+  }
+  op5 {
+    grid-area: op5;
+  }
+  .boton {
+    grid-area: boton;
+    margin-top: 2rem;
+    width: 10rem;
+    margin: 1rem auto;
+    a {
+      color: $blanco;
+    }
+  }
+}
+
+.comida__calorias {
+  margin: 1rem;
+  font-size: 0.75rem;
+}
+
+.comida-img {
+  height: auto;
+  max-width: 400px;
+}
+
+.comida__nombre {
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media (max-width: 820px) {
+  .semanal {
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "titulo "
+      "titulo2 "
+      "op1 "
+      "op2"
+      "op3"
+      "op4"
+      "op5"
+      "op6";
+      h1 {
+      margin: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .semanal {
+    margin: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "titulo "
+      "titulo2 "
+      "op1 "
+      "op2"
+      "op3"
+      "op4"
+      "op5"
+      "op6"
+      "boton";
+    h1 {
+      margin: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .comida-img {
+    height: auto;
+    max-width: 15rem;
+  }
+  .op1 {
+    max-width: 20rem;
+  }
+}

@@ -1,0 +1,54 @@
+.cambiar_plan{
+    display: flex;
+    flex-direction: column;
+    legend{
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: var(--primarioOscuro);
+        text-align: center;
+        font-size: 2rem;
+      }
+      label  {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      
+      }
+      select{
+        margin-right: 50rem;
+        border-radius: .5rem;
+      }
+      textarea{
+        height:20rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+      }
+      .boton {
+        margin-top: 2rem;
+        width: 5rem;
+        margin:1rem auto;
+      }
+      #email {
+        border-radius: .5rem;
+        border-width: thin;
+       
+      }
+      div {
+          input {
+        margin:2rem 33rem;
+       
+      }
+      }
+      
+   
+  }
+  
+  
+  @media (max-width:820px){
+    
+    .cambiar_plan select{
+      margin-right: auto;
+    }
+    
+    
+  }

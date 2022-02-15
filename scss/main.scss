@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--gris);
+  }
+
+  //importaciones
+  @import './variables/colores';
+  @import './secciones/navbar';
+  @import './secciones/footer';
+  @import './mixin/mixinprincipal';
+  @import './general/links';
+  @import './general/contenedorsombra';
+  @import './general/botones';
+  @import './secciones/index';
+  @import './secciones/menusemanal';
+  @import './secciones/sustentabilidad';
+  @import './secciones/porquecomerplantas';
+  @import './secciones/preguntasfrecuentes';
+  @import './secciones/cambiarplan';
+  @import './secciones/elegircomidas';
+  @import './secciones/planes';
+  @import './secciones/cambiarplan';
+  @import './secciones/nuevocliente';
