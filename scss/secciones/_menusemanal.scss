@@ -1,12 +1,5 @@
 .semanal {
-  background-color: $gris;
   text-align: center;
-  margin: 2rem;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 1rem;
-  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(6, auto);
@@ -20,6 +13,7 @@
     "boton boton";
 
   h1 {
+ 
     margin: 2rem;
     font-weight: bold;
     text-transform: uppercase;

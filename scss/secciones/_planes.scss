@@ -5,13 +5,7 @@
   }
   
   .plan{
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 1rem;
-    text-align: center;
+   
     background-image: url(../imagenes/verdus.png);
     background-color: $blanco;
     background-repeat: no-repeat;
@@ -21,7 +15,7 @@
         transform: scale(1.1);
       
       }
-      h1{
+      h2{
         color:$primarioOscuro;
         font-weight: bold;
       }
@@ -66,7 +60,7 @@
       }
     }
     .plan {
-        h1{
+        h2{
         color: $negro;
         font-weight: bold;
         margin-bottom: 1rem;

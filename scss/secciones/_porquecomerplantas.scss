@@ -7,19 +7,32 @@
   @include principal(600px, 0px);
   background-image: url(../imagenes/saludvegana.jpg);
   grid-area: info1;
-}
+  }
 .contenido-info {
-  @include contenido-principal(2rem, 2rem, $blanco, 1rem, 0rem, $blanco, 1rem);
+  @include contenido-principal(0rem, 0rem, $blanco, 1rem, 0rem, $blanco, 1rem);
+  h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: $blanco;
+    text-transform: uppercase;
+}
 }
 
 .info2 {
   @include principal(600px, 0px);
   background-image: url(../imagenes/buenoplaneta.jpg);
-  grid-area: info2;
+  grid-area: info2
 }
 .contenido-info2 {
-  @include contenido-principal(0rem, 2rem, $blanco, 2rem, 0rem, $blanco, 1rem);
+  @include contenido-principal(0rem, 0rem, $blanco, 2rem, 0rem, $blanco, 1rem);
+  h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: $blanco;
+    text-transform: uppercase;
 }
+}
+
 
 .info3 {
   @include principal(600px,0px);
@@ -27,19 +40,26 @@
   grid-area: info3;
 }
 .contenido-info3 {
-  @include contenido-principal(2rem, 2rem, $blanco, 1rem, 1rem, $blanco, 1rem);
+  @include contenido-principal(0rem, 0rem, $blanco, 1rem, 1rem, $blanco, 1rem);
   iframe {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
+
   a {
     font-weight: bold;
   }
+  h2 {
+    margin-top: 6rem;
+    font-size: 2rem;
+    color: $blanco;
+    text-transform: uppercase;
+}
 }
 
 @media (max-width: 820px) {
   .contenido-info2 {
-    h1 {
+    h2 {
       font-size: 1rem;
     }
     p {
@@ -49,7 +69,7 @@
   }
 
   .contenido-info3 {
-    h1 {
+    h2 {
       font-size: 1rem;
       margin-top: 2rem;
     }
@@ -63,7 +83,7 @@
   }
 
   .contenido-info {
-    h1 {
+    h2 {
       font-size: 1rem;
     }
     p {
