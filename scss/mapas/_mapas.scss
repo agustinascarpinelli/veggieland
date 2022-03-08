@@ -1,0 +1,14 @@
+$titulos: (
+  precios: $primarioOscuro,
+  semanal: $primarioOscuro,
+  beneficio: $negro,
+  elegir-comidas: $primarioOscuro,
+);
+
+@each $titulo, $color in $titulos {
+  .#{$titulo} h1 {
+    color: $color;
+    font-weight: bold;
+    text-align: center;
+  }
+}

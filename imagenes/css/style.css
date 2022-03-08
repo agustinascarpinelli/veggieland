@@ -248,7 +248,9 @@ li:hover {
   grid-template-columns: repeat 3, auto;
   grid-template-rows: 1fr, 1fr, 5fr;
   grid-column-gap: 1rem;
-  grid-template-areas: "titulo titulo titulo" "parrafo parrafo parrafo" "tweet1 tweet2 tweet3"; }
+  grid-template-areas: "titulo titulo titulo"
+ "parrafo parrafo parrafo"
+ "tweet1 tweet2 tweet3"; }
 
 @media (max-width: 420px) {
   .twitter-tweet a {
@@ -315,7 +317,12 @@ li:hover {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(6, auto);
   grid-row-gap: 2rem;
-  grid-template-areas: "titulo titulo" "titulo2 titulo2" "op1 op2" "op3 op4" "op5 op5" "boton boton"; }
+  grid-template-areas: "titulo titulo"
+ "titulo2 titulo2"
+ "op1 op2"
+ "op3 op4"
+ "op5 op5"
+ "boton boton"; }
   .semanal h1 {
     margin: 2rem;
     font-weight: bold;
@@ -363,7 +370,14 @@ li:hover {
     justify-content: center;
     grid-template-columns: auto;
     grid-template-rows: repeat(9, auto);
-    grid-template-areas: "titulo " "titulo2 " "op1 " "op2" "op3" "op4" "op5" "op6"; }
+    grid-template-areas: "titulo "
+ "titulo2 "
+ "op1 "
+ "op2"
+ "op3"
+ "op4"
+ "op5"
+ "op6"; }
     .semanal h1 {
       margin: 1rem; }
     .semanal h2 {
@@ -376,7 +390,15 @@ li:hover {
     justify-items: center;
     grid-template-columns: auto;
     grid-template-rows: repeat(9, auto);
-    grid-template-areas: "titulo " "titulo2 " "op1 " "op2" "op3" "op4" "op5" "op6" "boton"; }
+    grid-template-areas: "titulo "
+ "titulo2 "
+ "op1 "
+ "op2"
+ "op3"
+ "op4"
+ "op5"
+ "op6"
+ "boton"; }
     .semanal h1 {
       margin: 1rem; }
     .semanal h2 {

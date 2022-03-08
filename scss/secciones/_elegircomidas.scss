@@ -1,44 +1,36 @@
-.elegir-comidas p{
+.elegir-comidas {
+  p {
+    margin: 2rem;
     text-align: center;
-    margin:2rem;
-  
   }
-  .formulario-comidas {
-    display: flex;
-    flex-direction: column;
-    .boton {
-        margin-top: 2rem;
-        width: 5rem;
-        margin:1rem auto;
-      }
+}
+.formulario-comidas {
+  @extend %formEstilo;
+  .boton {
+    @extend %formBoton;
   }
-  
-  .formulario-comidas-email {
-    text-align: center;
-    margin-bottom: 2rem;
-    input{
-        border-radius: .5rem;
-        border-width: thin;
-      }
-   
+}
+
+.formulario-comidas-email {
+  text-align: center;
+  margin-bottom: 2rem;
+  input {
+    @extend %formInput;
   }
-  
-  @media (max-width:420px){
-    .formulario-comidas-email input{
-      margin-top: 2rem;
-     
-    }
+}
+
+@media (max-width: 420px) {
+  .formulario-comidas-email input {
+    margin-top: 2rem;
+    width: 10rem;
   }
-  .formulario-comidas-seleccion {
-      li{
+}
+.formulario-comidas-seleccion {
+  li {
     margin-bottom: 1rem;
     margin-top: 2rem;
-}
-    label{
-        font-weight: bold;
-        
-      }
   }
-  
-
-  
+  label {
+    @extend %formLabel;
+  }
+}

@@ -1,244 +1,220 @@
 .inicio {
-   @include principal (450px, 2rem);
-   background-image: url(../imagenes/inicio1.jpg);
-  }
-  
-  
-  .contenido-inicio {
-    @include contenido-principal (4rem,4rem,$blanco,2rem,2rem,$blanco,2rem);
-    grid-area:foto;
+  @include principal(450px, 2rem);
+  background-image: url(../imagenes/inicio1.jpg);
 }
 
-  @media (max-width:820px){
-    .contenido-inicio h1{
-      font-size:2rem;
-      text-align: center;
-    }
-    .contenido-inicio p{
-      font-size: 1rem;
-    }
-  }
-  
-  
-  .wsp {
-    font-size: 5rem;
-    bottom: 40px;
-    left: 40px;
-    height: 87px;
-    width: 87px;
-    position: fixed;
+.contenido-inicio {
+  @include contenido-principal(4rem, 4rem, $blanco, 2rem, 2rem, $blanco, 2rem);
+  grid-area: foto;
+}
+
+@media (max-width: 820px) {
+  .contenido-inicio h1 {
+    font-size: 2rem;
     text-align: center;
-    a {
+  }
+  .contenido-inicio p {
+    font-size: 1rem;
+  }
+}
+
+.wsp {
+  font-size: 5rem;
+  bottom: 40px;
+  left: 40px;
+  height: 87px;
+  width: 87px;
+  position: fixed;
+  text-align: center;
+  a {
     color: $primarioOscuro;
   }
-  }
- 
-  .sombra h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    font-size: 3rem;
-    color: $primarioOscuro;
-  }
-  .numero1{
-    grid-area: comofunciona;
-  }
-  
-  .servicio {
-    margin: 1rem;
-    h3 {
+}
+
+.numero1 h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  color: $primarioOscuro;
+}
+.numero1 {
+  grid-area: comofunciona;
+}
+
+.servicio {
+  margin: 1rem;
+  h3 {
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  }
-  
+}
+
+.servicios {
+  @include grid(2, 1fr, 3, 1fr, 1rem);
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
   .servicios {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    grid-row-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "img1" "ser1" "img2" "ser2" "img3" "ser3";
   }
+  .ser1 {
+    grid-area: ser1;
+  }
+  .ser2 {
+    grid-area: ser2;
+  }
+  .ser3 {
+    grid-area: ser3;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+}
 
-  @media (max-width:768px){
-    .servicios{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6,auto);
-      grid-template-areas: "img1" "ser1" "img2" "ser2" "img3" "ser3";
-    }
-    .ser1{
-      grid-area: ser1;
-    }
-    .ser2{
-      grid-area: ser2;
-    }
-    .ser3{
-      grid-area: ser3;
-    }
-    .img1{
-      grid-area: img1;
-    }
-    .img2{
-      grid-area: img2;
-    }
-    .img3{
-      grid-area: img3;
-    }
-  
-  }
-  
-  .imagen{
-       img {
+.imagen {
+  img {
     width: 200px;
     height: 200px;
   }
-  }
-  
-  .numero3{
-    grid-area:registro;
-    
-  }
-  .registro {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    h3 {
+}
+
+.numero3 {
+  grid-area: registro;
+}
+.registro {
+  @extend %formEstilo;
+  text-align: center;
+  h3 {
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    color: $primarioOscuro;
   }
-  }
-  
-  .registro-formulario {
-    legend {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
+}
+
+.registro-formulario {
+  legend {
+    @extend %formLegend;
     margin-bottom: 1rem;
     font-size: 1rem;
     label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: var(--negro);
+      margin-bottom: 0.5rem;
+      @extend %formLabel;
+      color: $negro;
+    }
+    fieldset {
+      border-radius: 0.5rem;
+    }
   }
-    fieldset{
-    border-radius: 0.5rem;
-  }
-  }
-}
+
   .input-text {
     width: 50%;
     border-radius: 0.3rem;
-    margin:2rem  auto;
+    margin: 2rem auto;
   }
+}
 
-  
-  .boton-pointer{
-     input{
-         &:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-  }
-  }
-  .numero2 {
-    grid-area:reseñas;
-  }
-  .reseñas{
-    display:grid;
-    grid-template-columns: repeat (3, auto);
-    grid-template-rows: (1fr,1fr, 5fr);
-    grid-column-gap:1rem;
-    grid-template-areas:
+.numero2 {
+  grid-area: reseñas;
+}
+.reseñas {
+  display: grid;
+  grid-template-columns: repeat (3, auto);
+  grid-template-rows: (1fr, 1fr, 5fr);
+  grid-column-gap: 1rem;
+  grid-template-areas:
     "titulo titulo titulo"
     "parrafo parrafo parrafo"
     "tweet1 tweet2 tweet3";
-   
-  }
-  @media (max-width:420px){
-    .twitter-tweet {
-        a{
+}
+@media (max-width: 420px) {
+  .twitter-tweet {
+    a {
       max-width: 10px;
     }
   }
-  }
-  @media (max-width: 820px){
-    .reseñas {
-      grid-template-columns: 1,auto;
-      grid-template-rows: repeat(5,auto);
-      grid-template-areas: "titulo" "parrafo" "tweet1" "tweet2" "tweet3";
-      justify-content:center;
-    
-     h1{
+}
+@media (max-width: 820px) {
+  .reseñas {
+    grid-template-columns: 1, auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "titulo" "parrafo" "tweet1" "tweet2" "tweet3";
+    justify-content: center;
+
+    h1 {
       font-size: 1rem;
       margin-bottom: 1rem;
     }
-     p{
+    p {
       font-size: 0.75rem;
-      margin-bottom:1rem;
+      margin-bottom: 1rem;
     }
-}
-    .twitter-tweet{
-         a{
-      max-width:10px;
-  
+  }
+  .twitter-tweet {
+    a {
+      max-width: 10px;
     }
-    }
-    .wsp{
-      position: fixed;
-      z-index: 2;
-    }
-    .contenido-inicio{
-         h1 {
+  }
+  .wsp {
+    position: fixed;
+    z-index: 2;
+  }
+  .contenido-inicio {
+    h1 {
       font-size: 2rem;
-      
-    }
-    }
-    .registro-formulario {
-        fieldset{
-      border:none;
     }
   }
+  .registro-formulario {
+    fieldset {
+      border: none;
+    }
   }
-  
-  .reseñas {
-      h3{
-    color:$primarioOscuro;
+}
+
+.reseñas {
+  h3 {
+    color: $primarioOscuro;
     font-weight: bold;
     text-align: center;
     grid-area: titulo;
     margin-bottom: 2rem;
-    font-size:2rem;
+    font-size: 2rem;
   }
 
-
-  p{
+  p {
     text-align: center;
     grid-area: parrafo;
     margin-bottom: 2rem;
   }
-  .tweet1{
+  .tweet1 {
     grid-area: tweet1;
-    
   }
- .tweet2{
+  .tweet2 {
     grid-area: tweet2;
   }
-  .tweet3{
+  .tweet3 {
     grid-area: tweet3;
   }
-  }
-  
-  .twitter-tweet{
-       a{
+}
+
+.twitter-tweet {
+  a {
     max-width: 15rem;
     height: auto;
   }
-  }
-  
-  
+}

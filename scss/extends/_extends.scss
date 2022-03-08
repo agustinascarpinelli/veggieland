@@ -1,0 +1,38 @@
+%porquecomerplantas h2 {
+  font-size: 2rem;
+  color: $blanco;
+  text-transform: uppercase;
+}
+
+%formEstilo {
+  display: flex;
+  flex-direction: column;
+}
+
+%formInput {
+  border-radius: 0.5rem;
+  border-width: thin;
+}
+
+%formBoton {
+  margin-top: 2rem;
+  width: 5rem;
+  margin: 1rem auto;
+}
+
+%formLabel {
+  font-weight: bold;
+}
+
+%formLegend {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%formTextArea {
+  height: 10rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}

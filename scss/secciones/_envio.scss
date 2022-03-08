@@ -1,0 +1,20 @@
+.nuevoCliente {
+  legend {
+    @extend %formLegend;
+    color: $primarioOscuro;
+    font-size: 2rem;
+    
+  }
+  label {
+    @extend %formLabel;
+    margin-bottom: 2rem;
+    align-content: center;
+  }
+  div {
+    input {
+      @extend %formInput;
+      margin-bottom: 2rem;
+      
+    }
+  }
+}

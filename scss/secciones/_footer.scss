@@ -15,13 +15,13 @@
     list-style: none;
     padding: 0.5rem;
     a {
-      &:hover {
-        color: var(--negro);
-        cursor: pointer;
-      }
       ion-icon {
         font-size: 2rem;
         color: $primarioOscuro;
+        &:hover {
+          color: $negro;
+          cursor: pointer;
+        }
       }
     }
   }

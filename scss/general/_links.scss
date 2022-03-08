@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     &:hover{
-    color: var(--negro);
+    color: $negro;
     transform: scale(1.01);
     cursor: pointer;
   }

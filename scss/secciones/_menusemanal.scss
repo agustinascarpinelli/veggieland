@@ -1,9 +1,5 @@
 .semanal {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(6, auto);
-  grid-row-gap: 2rem;
+  @include grid(2, auto,6, auto,2rem);
   grid-template-areas:
     "titulo titulo"
     "titulo2 titulo2"
@@ -13,11 +9,8 @@
     "boton boton";
 
   h1 {
- 
     margin: 2rem;
-    font-weight: bold;
     text-transform: uppercase;
-    color: $primarioOscuro;
     grid-area: titulo;
   }
   h2 {
@@ -82,7 +75,7 @@
       "op4"
       "op5"
       "op6";
-      h1 {
+    h1 {
       margin: 1rem;
     }
     h2 {

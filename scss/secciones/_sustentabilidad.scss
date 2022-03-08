@@ -1,50 +1,42 @@
 /* SUSTENTABILIDAD */
-.img-sust{
-    width:  240px;
-  }
- 
-  .sustentabilidad{
-      @include principal (480px,2rem);
-    background-image: url(../imagenes/sustentab.jpg);
-  }
-  
-  .contenido-sustentabilidad{
-      @include contenido-principal(0rem,3rem,$blanco,0rem,0rem,$blanco,1rem);
-      h1{
-        text-align: center;
-        }
-  }
-  
+.img-sust {
+  width: 240px;
+}
 
-  
-  .img-sust{
-    margin-right: 0rem;
+.sustentabilidad {
+  @include principal(480px, 2rem);
+  background-image: url(../imagenes/sustentab.jpg);
+}
+
+.contenido-sustentabilidad {
+  @include contenido-principal(0rem, 3rem, $blanco, 0rem, 0rem, $blanco, 1rem);
+  h1 {
+    text-align: center;
   }
-  .sustent1 {
-      h1{
+}
+
+.img-sust {
+  margin-right: 0rem;
+}
+.sustent1 {
+  h1 {
     margin-bottom: 2rem;
   }
 }
-  
-  
-   
-    
-  
-    .sust1{
-         h2{
-  color:$primarioOscuro;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-    }
-        h3{
-        font-size: 2rem;
-        color:$primarioOscuro;
-      }
+
+.sust1 {
+  text-align: center;
+  h2 {
+    color: $primarioOscuro;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    color: $primarioOscuro;
+  }
 }
-  
-    
-  
-    .sust2{
-      align-items: center;
-    }
-  
+.sust2 {
+  text-align: center;
+  align-items: center;
+}

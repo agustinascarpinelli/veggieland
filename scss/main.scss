@@ -5,7 +5,7 @@
   }
   body {
     font-family: "Comfortaa", sans-serif;
-    background-color: var(--gris);
+    background-color:#f8f9fa;
   }
 
   //importaciones
@@ -13,6 +13,8 @@
   @import './secciones/navbar';
   @import './secciones/footer';
   @import './mixin/mixinprincipal';
+  @import './mapas/mapas';
+  @import './extends/extends';
   @import './general/links';
   @import './general/contenedorsombra';
   @import './general/botones';
@@ -25,4 +27,4 @@
   @import './secciones/elegircomidas';
   @import './secciones/planes';
   @import './secciones/cambiarplan';
-  @import './secciones/nuevocliente';
+  @import './secciones/envio';

@@ -1,54 +1,37 @@
-.cambiar_plan{
-    display: flex;
-    flex-direction: column;
-    legend{
-        margin-bottom: 2rem;
-        font-weight: bold;
-        color: var(--primarioOscuro);
-        text-align: center;
-        font-size: 2rem;
-      }
-      label  {
-        font-weight: bold;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-      
-      }
-      select{
-        margin-right: 50rem;
-        border-radius: .5rem;
-      }
-      textarea{
-        height:20rem;
-        border-radius: .5rem;
-        margin-bottom: 1rem;
-      }
-      .boton {
-        margin-top: 2rem;
-        width: 5rem;
-        margin:1rem auto;
-      }
-      #email {
-        border-radius: .5rem;
-        border-width: thin;
-       
-      }
-      div {
-          input {
-        margin:2rem 33rem;
-       
-      }
-      }
-      
-   
+.cambiar_plan {
+  @extend %formEstilo;
+  legend {
+    @extend %formLegend;
+    margin-bottom: 2rem;
+    color: $primarioOscuro;
+    font-size: 2rem;
   }
-  
-  
-  @media (max-width:820px){
-    
-    .cambiar_plan select{
-      margin-right: auto;
+  label {
+    @extend %formLabel;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  select {
+    border-radius: 0.5rem;
+  }
+  textarea {
+    @extend %formTextArea;
+  }
+  .boton {
+    @extend %formBoton;
+  }
+  #email {
+    @extend %formInput;
+  }
+  div {
+    input {
+      margin: 2rem 33rem;
     }
-    
-    
   }
+}
+
+@media (max-width: 820px) {
+  .cambiar_plan select {
+    margin-right: auto;
+  }
+}
